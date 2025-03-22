@@ -72,6 +72,6 @@ public class TalsMusicDiscs
     @Mod.EventHandler
     public static void init(FMLPostInitializationEvent event)
     {
-        LogHelper.info("you wouldn't believe how much i love you");
+        LogHelper.info("you wouldn't believe how much i love you <3");
     }
 }
