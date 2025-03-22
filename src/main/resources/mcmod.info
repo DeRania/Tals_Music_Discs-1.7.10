@@ -1,0 +1,16 @@
+[
+{
+  "modid": "TalsMusicDiscs",
+  "name": "§5Tal's Music Discs",
+  "description": "a mod that hopefully adds custom Music Discs to GTNH.",
+  "version": "§60.0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["§5Tal"],
+  "credits":    "Forge, FML, Absolute Phoenix, §6Kida",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
