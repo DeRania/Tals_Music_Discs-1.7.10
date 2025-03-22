@@ -27,6 +27,7 @@ import de.web.Derminingcraft.talsmusicdiscs.handlers.ConfigurationHandler;
 import de.web.Derminingcraft.talsmusicdiscs.proxy.IProxy;
 import de.web.Derminingcraft.talsmusicdiscs.reference.Reference;
 import cpw.mods.fml.common.Mod;
+import de.web.Derminingcraft.talsmusicdiscs.register.RegisterItems;
 import de.web.Derminingcraft.talsmusicdiscs.update.UpdateCheck;
 import de.web.Derminingcraft.talsmusicdiscs.utility.LogHelper;
 
@@ -60,18 +61,28 @@ public class TalsMusicDiscs
         UpdateCheck.checkForUpdates();
         FMLCommonHandler.instance().bus().register(new LoginChat());
 
+        LogHelper.info("Registering Items");
+        RegisterItems.MusicDiscs();
+
+
+        LogHelper.info("preInitialization Complete");
+
         LogHelper.info("I love you Kida :3");
     }
 
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event)
     {
+        LogHelper.info("Initialization Complete");
+
         LogHelper.info("I love you soooo much");
     }
 
     @Mod.EventHandler
     public static void init(FMLPostInitializationEvent event)
     {
+        LogHelper.info("postInitialization Complete");
+
         LogHelper.info("you wouldn't believe how much i love you <3");
     }
 }
