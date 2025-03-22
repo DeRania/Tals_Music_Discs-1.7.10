@@ -63,7 +63,8 @@ public class TalsMusicDiscs
 
         LogHelper.info("Registering Items");
         RegisterItems.MusicDiscs();
-
+        RegisterItems.CastMold();
+        RegisterItems.VinylBase();
 
         LogHelper.info("preInitialization Complete");
 

@@ -16,46 +16,25 @@
  ^ along with this program.  If not, see <https://www.gnu.org/licenses/>.                         ^
  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
-package de.web.Derminingcraft.talsmusicdiscs.register;
+package de.web.Derminingcraft.talsmusicdiscs.creativetabs;
 
-import cpw.mods.fml.common.registry.GameRegistry;
+import de.web.Derminingcraft.talsmusicdiscs.init.initItems;
+import de.web.Derminingcraft.talsmusicdiscs.reference.Reference;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 
-import static de.web.Derminingcraft.talsmusicdiscs.init.initItems.*;
 
 /**
  * Created by Roberto on 22/03/2025.
  */
-public class RegisterItems
+public class TalsMusicDiscsTabs
 {
-    public static void MusicDiscs()
+    public static final CreativeTabs talsMusicDiscsTab = new CreativeTabs(Reference.MOD_ID.toLowerCase() + ":talsMusicDiscs.name")
     {
-        // Orange Music Discs
-        GameRegistry.registerItem(musicDiscOrange1, "musicDiscOrange1");
-        // Purple Music Discs
-        GameRegistry.registerItem(musicDiscPurple1, "musicDiscPurple1");
-    }
-    public static void CastMold()
-    {
-        GameRegistry.registerItem(cast, "cast");
-        GameRegistry.registerItem(mold, "mold");
-    }
-    public static void VinylBase()
-    {
-        GameRegistry.registerItem(baseOrange, "baseOrange");
-        GameRegistry.registerItem(basePurple, "basePurple");
-        //GameRegistry.registerItem(baseWhite, "baseWhite");
-        //GameRegistry.registerItem(baseMagenta, "baseMagenta");
-        //GameRegistry.registerItem(baseLightBlue, "baseLightBlue");
-        //GameRegistry.registerItem(baseYellow, "baseYellow");
-        //GameRegistry.registerItem(baseLime, "baseLime");
-        //GameRegistry.registerItem(basePink, "basePink");
-        //GameRegistry.registerItem(baseGray, "baseGray");
-        //GameRegistry.registerItem(baseLightGray, "baseLightGray");
-        //GameRegistry.registerItem(baseCyan, "baseCyan");
-        //GameRegistry.registerItem(baseBlue, "baseBlue");
-        //GameRegistry.registerItem(baseBrown, "baseBrown");
-        //GameRegistry.registerItem(baseGreen, "baseGreen");
-        //GameRegistry.registerItem(baseRed, "baseRed");
-        //GameRegistry.registerItem(baseBlack, "baseBlack");
-    }
+        @Override
+        public Item getTabIconItem()
+        {
+            return initItems.musicDiscOrange1;
+        }
+    };
 }

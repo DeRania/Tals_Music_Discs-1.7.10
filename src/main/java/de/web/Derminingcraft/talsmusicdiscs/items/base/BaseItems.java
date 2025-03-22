@@ -20,6 +20,7 @@ package de.web.Derminingcraft.talsmusicdiscs.items.base;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import de.web.Derminingcraft.talsmusicdiscs.creativetabs.TalsMusicDiscsTabs;
 import de.web.Derminingcraft.talsmusicdiscs.reference.Reference;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
@@ -36,6 +37,7 @@ public class BaseItems extends Item
     {
         super();
         this.setUnlocalizedName(unlocalizedName);
+        this.setCreativeTab(TalsMusicDiscsTabs.talsMusicDiscsTab);
     }
 
     @Override
@@ -57,7 +59,7 @@ public class BaseItems extends Item
     @Override
     public String getItemStackDisplayName(ItemStack itemStack)
     {
-        return (EnumChatFormatting.DARK_PURPLE + "" + StatCollector.translateToLocal(this.getUnlocalizedNameInefficiently(itemStack) + ".name" + EnumChatFormatting.GOLD));
+        return (EnumChatFormatting.LIGHT_PURPLE + "" + StatCollector.translateToLocal(this.getUnlocalizedNameInefficiently(itemStack) + ".name" + EnumChatFormatting.GOLD));
     }
 
     @Override

@@ -18,7 +18,9 @@
 
 package de.web.Derminingcraft.talsmusicdiscs.init;
 
+import de.web.Derminingcraft.talsmusicdiscs.items.CastMold;
 import de.web.Derminingcraft.talsmusicdiscs.items.MusicDiscs;
+import de.web.Derminingcraft.talsmusicdiscs.items.VinylBase;
 import de.web.Derminingcraft.talsmusicdiscs.items.base.BaseItems;
 
 /**
@@ -26,5 +28,32 @@ import de.web.Derminingcraft.talsmusicdiscs.items.base.BaseItems;
  */
 public class initItems
 {
-    public static final BaseItems musicDisc1 = new MusicDiscs("musicDisc1");
+    //The actual Music Discs
+    //Orange
+    public static final BaseItems musicDiscOrange1 = new MusicDiscs("musicDiscOrange1");
+    //Purple
+    public static final BaseItems musicDiscPurple1 = new MusicDiscs("musicDiscPurple1");
+
+    //The Vinyl Base precursor for the Discs
+    public static final BaseItems baseOrange = new VinylBase("baseOrange");
+    public static final BaseItems basePurple = new VinylBase("basePurple");
+    public static final BaseItems baseWhite = new VinylBase("baseWhite");
+    public static final BaseItems baseMagenta = new VinylBase("baseMagenta");
+    public static final BaseItems baseLightBlue = new VinylBase("baseLightBlue");
+    public static final BaseItems baseYellow = new VinylBase("baseYellow");
+    public static final BaseItems baseLime = new VinylBase("baseLime");
+    public static final BaseItems basePink = new VinylBase("basePink");
+    public static final BaseItems baseGray = new VinylBase("baseGray");
+    public static final BaseItems baseLightGray = new VinylBase("baseLightGray");
+    public static final BaseItems baseCyan = new VinylBase("baseCyan");
+    public static final BaseItems baseBlue = new VinylBase("baseBlue");
+    public static final BaseItems baseBrown = new VinylBase("baseBrown");
+    public static final BaseItems baseGreen = new VinylBase("baseGreen");
+    public static final BaseItems baseRed = new VinylBase("baseRed");
+    public static final BaseItems baseBlack = new VinylBase("baseBlack");
+
+    //The Cast and Mold for the machines
+    public static final BaseItems cast = new CastMold("cast");
+    public static final BaseItems mold = new CastMold("mold");
+
 }
